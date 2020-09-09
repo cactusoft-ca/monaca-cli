@@ -110,7 +110,7 @@ RemoteTask.remote = function(task) {
         if (!params.browser && task !== 'config' &&  !params['build-list']) {
           lib.printSuccessMessage({action: 'upload'}, files);
           error = 'Unable to build this project: ';
-          return monaca.checkBuildAvailability(projectInfo, params);
+          return '';
         }
       }
     )
